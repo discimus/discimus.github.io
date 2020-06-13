@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumir API Covid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="templateCabecalho">
+    <div id="conteudoConsulta">
+      <select name="selectPaises" id="selectPaises"></select>
+      <button id="botaoConsulta">Consultar</button>
+    </div>
+    <div id="conteudoFiltro">
+      <select id="selectInicio">
+        <option value="">Início</option>
+      </select>
+      <select id="selectFim">
+        <option value="">Fim</option>
+      </select>
+    </div>
+  </div>
+  <div id="conteudoResultado">
+    <table id="tabelaResultado">
+      <thead>
+        <tr>
+          <th colspan="3" id="tituloPais">País</th>
+        </tr>
+        <tr>
+          <th>Casos</th>
+          <th>Status</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody id="corpoTabela"></tbody>
+    </table>
+  </div>
+  <script src="paises.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

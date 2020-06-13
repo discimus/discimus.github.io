@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+th {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  padding: 8px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #0d0d26;
+  color: #ddd;
+}
+
+td {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+#templateCabecalho {
+  margin-bottom: 10px;
+}
+
+#conteudoConsulta {
+  position: static;
+  text-align: center;
+}
+
+#selectPaises {
+  position: relative;
+  margin-top: 10px;
+  max-width: 80%;
+}
+
+#botaoConsulta {
+  position: relative;
+  margin-top: 10px;
+}
+
+#conteudoFiltro {
+  position: static;
+  text-align: center;
+}
+
+#selectInicio {
+  margin-top: 10px;
+}
+
+#selectFim {
+  margin-top: 10px;
+}
+
+#conteudoResultado {
+  /* max-height: 600px; */
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+#tabelaResultado {
+  position: relative;
+  left: 50%;
+  max-height: 100%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  min-width: 50%;
+}
