@@ -4,6 +4,11 @@
   transform: translateY(-50%);
 }
 
+.field-image {
+  width: 240px;
+  display: flex;
+}
+
 .img-thumbnail {
   transform: rotateZ(180deg);
 }
