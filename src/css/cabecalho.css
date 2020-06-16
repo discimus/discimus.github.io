@@ -1,0 +1,46 @@
+.cabecalho {
+  background-color: #254D58;
+  position: fixed;
+
+  z-index: 99;
+
+  top: 0;
+  left: 6%;
+  right: 6%;
+
+  height: 24px;
+
+  border-radius:0px 0px 60px 60px;
+  -moz-border-radius:0px 0px 60px 60px;
+  -webkit-border-radius:0px 0px 60px 60px;
+
+  padding: 0 10% 0 10%;
+
+  -webkit-box-shadow:0px 0px 3px 3px #031926 ;
+  -moz-box-shadow:0px 0px 3px 3px #031926 ;
+  box-shadow:0px 0px 3px 3px #031926 ;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nome {
+  order: -1;
+}
+
+.atalhos {
+  display: flex;
+  flex-flow: nowrap;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.atalhos a {
+  text-decoration: none;
+  display: block;
+  padding: 0 12px 0 12px;
+  color: whitesmoke;
+}

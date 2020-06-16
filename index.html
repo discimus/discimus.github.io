@@ -1,64 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jônata Pereira</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/cabecalho.css">
+    <link rel="stylesheet" href="src/css/sobre.css">
+    <link rel="stylesheet" href="src/css/projetos.css">
+    <link rel="stylesheet" href="src/css/rodape.css">
+  </head>
+  <body>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <div class="estante">
+      <header>
+        <div class="cabecalho">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dist/css/style.css">
-  <link rel="stylesheet" href="dist/css/icons.css">
-  
-  <title id="tittlePage">Jônata Pereira</title>
-</head>
+          <ul class="atalhos">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
 
-<body class="text-center">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead justify-content-center mb-auto">
-      <h3 class="masthead-brand" id="mastheadBrand">Jônata W Pereira</h3>
-      <div class="inner">
+        </div>
+      </header>
+      <main class="main">
+        
+        <div class="prateleira sobre" id="sobre">
+          <h1 class="titulo-conteudo">Sobre</h1>
+          <div class="corpo-conteudo">
+            <p class="descricao">
+              Estudante de Ciência da Computação e entusiasta em aplicações web com 
+              interesse em realizar projetos que contribuam com a comunidade à minha volta.
+              No momento conhecendo o universo do Java Web e experimentando o Node.js no
+              consumo de APIs e pequenas automações.
+            </p>
+            <img class="minha-foto" src="img/profile-image-2.jpg" alt="">
+          </div>
+        </div>
 
-        <nav class="nav nav-masthead justify-content-center">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" id="linkSobre" href="#">Sobre</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Projetos</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" id="linkProjetoRosaParks" href="#">Projeto Rosa Parks</a>
-                <a class="dropdown-item" id="linkConsumindoApiCovid" href="#">Consumindo API Pública Covid-19</a>
-                <!-- <a class="dropdown-item" href="#">Link 3</a> -->
+        <div class="prateleira projetos" id="projetos">
+          <h1 class="titulo-conteudo">Projetos</h1>
+          <h2>Alguns projetos meus disponíveis no <a href="#gisthub">GitHub</a></h2>
+          <div class="list-group listagem">
+            <a href="https://github.com/vaiola3/projeto-rosa-parks" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Projeto Rosa Parks</h5>
+                <!-- <small>3 days ago</small> -->
               </div>
-            </li>
-          </ul> 
-        </nav>
-      </div>
-    </header>
-
-    <iframe 
-      class="frame-content"
-      id="frameContent"
-      src="pages/info/info.html" 
-      frameborder="0">
-    </iframe>
-
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>
-          Você pode me encontrar no
-          <a href="https://www.linkedin.com/in/j%C3%B4nata-pereira-a12b8511b/">
-            LinkedIn</a>.
-        </p>
-      </div>
-    </footer>
-  </div>
-</body>
-<script src="dist/js/jquery-3.5.1.slim.min.js"></script>
-<script src="dist/js/popper.min.js"></script>
-<script src="dist/js/bootstrap.min.js"></script>
-<script src="dist/js/script.js"></script>
-
+              <img src="img/print-projeto-rosa-parks.png" alt="">
+              <p class="mb-1">
+                Se trata de uma aplicação web para gestão de Cursinhos Populares (Pré-Vestibulares) 
+                com a proposta de se ter um melhor acompanhamento do fluxo de alunos durante os 
+                períodos de atividade do(s) cursinho(s).
+              </p>
+              <p class="mb-1">
+                Nele é possível se realizar o cadastro dos alunos e a ativação ou a inativação dos mesmos
+                (caso o aluno deixe de acompanhar as atividades da organização) com persistência de dados.
+              </p>
+              <!-- <small>Donec id elit non mi porta.</small> -->
+            </a>
+            <a href="https://github.com/vaiola3/consumo-api-publica" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Consumindo API Pública de casos de Covid-19</h5>
+              </div>
+              <img src="img/print-consumo-api-covid-19.png" alt="">
+              <p class="mb-1">
+                Utilizei HTML, CSS e JavaScript para consumir uma API Pública 
+                de casos de Corona Vírus. A ideia é compreender os princípios
+                de REST e também treinar técnicas de front-end.
+              </p>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="rodape">
+          Estou também no <a href="https://www.linkedin.com/in/j%C3%B4nata-pereira-a12b8511b/">Linkedin</a>.
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../dist/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="../dist/js/popper.min.js"></script>
+  <script src="../dist/js/bootstrap.min.js"></script>
+  <script src="src/js/script.js" charset="utf-8"></script>
 </html>

@@ -1,0 +1,39 @@
+.sobre {
+  position: relative;
+  padding: 36px;  
+}
+
+.corpo-conteudo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.descricao {
+  padding-top: 120px;
+}
+
+.sobre p {
+  color: #F4E9CD;
+
+  font-size: 24px;
+  text-align: justify;  
+}
+
+.sobre img {
+  border-radius:100px;
+  -moz-border-radius:100px;
+  -webkit-border-radius:100px;
+
+  border-width:6px;
+  border-style:solid;
+  border-color:#F6EDD6;
+
+  min-height: 210px;
+  min-width: 210px;
+
+  max-height: 330px;
+  max-width: 330px;
+}
