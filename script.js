@@ -57,6 +57,66 @@
       });
   }
 
+  /* ==== I18N (language toggle) ==== */
+  var currentLang = localStorage.getItem('lang') || 'pt';
+
+  var resolveKey = function (obj, path) {
+    var parts = path.split('.');
+    for (var i = 0; i < parts.length; i++) {
+      if (!obj) return undefined;
+      obj = obj[parts[i]];
+    }
+    return obj;
+  };
+
+  var applyLang = function (lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+    if (typeof LANG === 'undefined') return;
+
+    var strings = LANG[lang];
+    if (!strings) return;
+
+    document.title = strings.title;
+
+    var textEls = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < textEls.length; i++) {
+      var key = textEls[i].getAttribute('data-i18n');
+      var val = resolveKey(strings, key);
+      if (val !== undefined) {
+        textEls[i].textContent = val;
+      }
+    }
+
+    var htmlEls = document.querySelectorAll('[data-i18n-html]');
+    for (var j = 0; j < htmlEls.length; j++) {
+      var htmlKey = htmlEls[j].getAttribute('data-i18n-html');
+      var htmlVal = resolveKey(strings, htmlKey);
+      if (htmlVal !== undefined) {
+        htmlEls[j].innerHTML = htmlVal;
+      }
+    }
+
+    var ptBtn = document.querySelector('[data-lang="pt"]');
+    var enBtn = document.querySelector('[data-lang="en"]');
+    if (ptBtn) { ptBtn.classList.toggle('active', lang === 'pt'); }
+    if (enBtn) { enBtn.classList.toggle('active', lang === 'en'); }
+  };
+
+  applyLang(currentLang);
+
+  var langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', function (e) {
+      var target = e.target;
+      if (target && target.hasAttribute('data-lang')) {
+        applyLang(target.getAttribute('data-lang'));
+      }
+    });
+  }
+
   /* ==== NAV SCROLL SHADOW ==== */
   var nav = document.getElementById('nav');
   var onScroll = function () {
