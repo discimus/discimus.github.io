@@ -33,7 +33,11 @@ var LANG = {
       web: 'Web & Experimentos',
       data: 'Dados & CLI',
       finance: 'Finanças',
-      other: 'Outros'
+      other: 'Outros',
+      unmapped: 'Não mapeados',
+      unmappedLoading: 'Buscando repositórios...',
+      unmappedEmpty: 'Nenhum repositório novo encontrado.',
+      unmappedError: 'Erro ao buscar repositórios do GitHub.'
     },
     proj: {
       dashaws: 'Dashboard local-first para scheduling e execução de scripts definidos pelo usuário (JavaScript ou Python) com suporte a intervalos, expressões cron, filas e eventos pub/sub. Funciona em modo standalone no browser.',
@@ -98,7 +102,11 @@ var LANG = {
       web: 'Web & Experiments',
       data: 'Data & CLI',
       finance: 'Finance',
-      other: 'Other'
+      other: 'Other',
+      unmapped: 'Unmapped',
+      unmappedLoading: 'Fetching repositories...',
+      unmappedEmpty: 'No new repositories found.',
+      unmappedError: 'Error fetching GitHub repositories.'
     },
     proj: {
       dashaws: 'A local-first dashboard for scheduling and executing user-defined scripts (JavaScript or Python) with support for intervals, cron expressions, queues, and pub/sub events. Supports standalone browser mode.',

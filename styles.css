@@ -508,6 +508,20 @@ img {
   white-space: nowrap;
 }
 
+.unmapped-loading {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #484f58;
+  font-size: 0.9rem;
+}
+
+.unmapped-empty {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #484f58;
+  font-size: 0.85rem;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   padding: 3rem 0;

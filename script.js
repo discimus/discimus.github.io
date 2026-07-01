@@ -46,9 +46,12 @@
           }
           statStars.textContent = totalStars;
         }
+
+        renderUnmappedRepos(repos);
       })
       .catch(function () {
         /* API failed — keep static fallback values already in DOM */
+        showUnmappedError();
       })
       .then(function () {
         setPulse(statRepos, false);
@@ -116,6 +119,96 @@
       }
     });
   }
+
+  /* ==== UNMAPPED REPOS (dynamic from GitHub API) ==== */
+  var STATIC_REPOS = [
+    'dashaws', 'hermes', 'speech', 'lima', 'testwithazuredockerinstance',
+    'now', 'rawgraphs-app', 'myfin', 'ofxparser.net', 'cronos',
+    'mytasktoday', 'sensegame', 'binarytree', 'twins', 'locked',
+    'rufus', 'habbit', 'yachatbws', 'hundred',
+    'analise-dados-densidade-populacao-municipios-brasileiros',
+    'little-bird', 'vuejs-without-build-tools-boilerplate', 'reading',
+    'java-buffered-reader-template'
+  ];
+
+  var langToClass = {
+    'TypeScript': 'lang-ts',
+    'C#': 'lang-cs',
+    'JavaScript': 'lang-js',
+    'Python': 'lang-py',
+    'HTML': 'lang-html',
+    'CSS': 'lang-css',
+    'Kotlin': 'lang-kt',
+    'Java': 'lang-java',
+    'PHP': 'lang-php',
+    'Jupyter Notebook': 'lang-jupyter'
+  };
+
+  var getLangClass = function (lang) {
+    return langToClass[lang] || 'lang-html';
+  };
+
+  var buildCard = function (repo) {
+    var lang = repo.language || '';
+    var desc = repo.description || '';
+    var starHtml = repo.stargazers_count ? ' <span class="project-badge">&#x2B50; ' + repo.stargazers_count + '</span>' : '';
+    var forkBadge = repo.fork ? ' <span class="project-badge">fork</span>' : '';
+
+    return '<article class="project-card">' +
+      '<div class="project-header">' +
+        '<h4 class="project-name">' +
+          '<a href="' + repo.html_url + '" target="_blank" rel="noopener">' + repo.name + '</a>' +
+          forkBadge +
+          starHtml +
+        '</h4>' +
+        '<span class="project-lang ' + getLangClass(lang) + '">' + lang + '</span>' +
+      '</div>' +
+      '<p class="project-desc">' + desc + '</p>' +
+    '</article>';
+  };
+
+  var renderUnmappedRepos = function (repos) {
+    var grid = document.getElementById('unmappedGrid');
+    if (!grid) return;
+
+    var unmapped = [];
+    for (var i = 0; i < repos.length; i++) {
+      var name = repos[i].name.toLowerCase();
+      if (STATIC_REPOS.indexOf(name) === -1) {
+        unmapped.push(repos[i]);
+      }
+    }
+
+    if (unmapped.length === 0) {
+      grid.innerHTML = '<p class="unmapped-empty" data-i18n="cat.unmappedEmpty">Nenhum repositório novo encontrado.</p>';
+    } else {
+      var html = '';
+      for (var j = 0; j < unmapped.length; j++) {
+        html += buildCard(unmapped[j]);
+      }
+      grid.innerHTML = html;
+    }
+
+    applyLang && applyLang(currentLang);
+    reObserveCards();
+  };
+
+  var showUnmappedError = function () {
+    var grid = document.getElementById('unmappedGrid');
+    if (!grid) return;
+    grid.innerHTML = '<p class="unmapped-empty" data-i18n="cat.unmappedError">Erro ao buscar repositórios do GitHub.</p>';
+    applyLang && applyLang(currentLang);
+  };
+
+  var reObserveCards = function () {
+    var newCards = document.querySelectorAll('#unmappedGrid .project-card');
+    for (var i = 0; i < newCards.length; i++) {
+      if (!newCards[i].classList.contains('fade-in')) {
+        newCards[i].classList.add('fade-in');
+        observer.observe(newCards[i]);
+      }
+    }
+  };
 
   /* ==== NAV SCROLL SHADOW ==== */
   var nav = document.getElementById('nav');
