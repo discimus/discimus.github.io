@@ -20,7 +20,7 @@ var LANG = {
       projects: 'Projetos'
     },
     about: {
-      p1: 'Desenvolvedor brasileiro apaixonado por construir aplicações web open source e explorar o ecossistema .NET. Com 24 repositórios públicos no GitHub, transita entre múltiplas linguagens e paradigmas — de APIs em C# a ferramentas CLI em Python, passando por TypeScript, Kotlin e experimentos com SignalR, WebSockets e containers Docker.',
+      p1: 'Desenvolvedor brasileiro apaixonado por construir aplicações web open source e explorar o ecossistema .NET. Com diversos repositórios públicos no GitHub, transita entre múltiplas linguagens e paradigmas — de APIs em C# a ferramentas CLI em Python, passando por TypeScript, Kotlin e experimentos com SignalR, WebSockets e containers Docker.',
       p2: 'Seus projetos revelam um foco consistente em <strong>produtividade</strong>, <strong>automação</strong> e <strong>ferramentas de uso pessoal</strong> — desde dashboards que executam scripts sob agendamento até cronômetros, sistemas de notas criptografadas e visualizadores financeiros.',
       card1Title: 'Clean Architecture',
       card1Desc: 'Explorando boas práticas com o projeto <em>Now</em>, um POC focado em arquitetura limpa no ecossistema .NET.',
@@ -89,7 +89,7 @@ var LANG = {
       projects: 'Projects'
     },
     about: {
-      p1: 'Brazilian developer passionate about building open source web applications and exploring the .NET ecosystem. With 24 public repositories on GitHub, he moves across multiple languages and paradigms — from C# APIs to Python CLI tools, through TypeScript, Kotlin, and experiments with SignalR, WebSockets, and Docker containers.',
+      p1: 'Brazilian developer passionate about building open source web applications and exploring the .NET ecosystem. With multiple public repositories on GitHub, he moves across multiple languages and paradigms — from C# APIs to Python CLI tools, through TypeScript, Kotlin, and experiments with SignalR, WebSockets, and Docker containers.',
       p2: 'His projects reveal a consistent focus on <strong>productivity</strong>, <strong>automation</strong>, and <strong>personal-use tools</strong> — from dashboards that run scripts on schedules to stopwatches, encrypted note systems, and financial viewers.',
       card1Title: 'Clean Architecture',
       card1Desc: 'Exploring best practices with the <em>Now</em> project, a POC focused on clean architecture in the .NET ecosystem.',
