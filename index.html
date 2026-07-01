@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jônata Pereira — desenvolvedor entusiasta de aplicações web open source e .NET">
+  <title>discimus — Jônata Pereira</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗿</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">discimus</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="https://github.com/discimus" target="_blank" rel="noopener">GitHub &nearr;</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-avatar">
+        <img
+          src="https://avatars.githubusercontent.com/u/46648240?v=4"
+          alt="Jônata Pereira"
+          width="96"
+          height="96"
+          loading="eager"
+        >
+      </div>
+      <h1 class="hero-name">Jônata Pereira</h1>
+      <p class="hero-handle">@discimus</p>
+      <p class="hero-bio">
+        I'm an enthusiast about open source web applications and currently I'm falling in love with .NET
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" id="statRepos">24</span>
+          <span class="stat-label">repositórios</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="statStars">48</span>
+          <span class="stat-label">stars</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="statFollowers">15</span>
+          <span class="stat-label">seguidores</span>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <span class="meta-item">&#x1F4CD; Brasil</span>
+        <span class="meta-item achievement" title="Arctic Code Vault Contributor">&#x2744;&#xFE0F; Arctic Code Vault</span>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/discimus" class="btn btn-primary" target="_blank" rel="noopener">
+          GitHub
+        </a>
+        <a href="#projetos" class="btn btn-outline">
+          Ver projetos &darr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Desenvolvedor brasileiro apaixonado por construir aplicações web open source
+            e explorar o ecossistema .NET. Com 24 repositórios públicos no GitHub, transita
+            entre múltiplas linguagens e paradigmas — de APIs em C# a ferramentas CLI em
+            Python, passando por TypeScript, Kotlin e experimentos com SignalR, WebSockets
+            e containers Docker.
+          </p>
+          <p>
+            Seus projetos revelam um foco consistente em <strong>produtividade</strong>,
+            <strong>automação</strong> e <strong>ferramentas de uso pessoal</strong> —
+            desde dashboards que executam scripts sob agendamento até cronômetros,
+            sistemas de notas criptografadas e visualizadores financeiros.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">&#x2699;&#xFE0F;</div>
+            <h3>Clean Architecture</h3>
+            <p>Explorando boas práticas com o projeto <em>Now</em>, um POC focado em arquitetura limpa no ecossistema .NET.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">&#x1F4E1;</div>
+            <h3>Open Source First</h3>
+            <p>Todos os 24 repositórios são públicos. Código aberto como filosofia de aprendizado e compartilhamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tecnologias</h2>
+      <div class="skills-cloud">
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">.NET</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Kotlin</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">SignalR</span>
+        <span class="skill-tag">WebSockets</span>
+        <span class="skill-tag">Jupyter</span>
+        <span class="skill-tag">Azure</span>
+        <span class="skill-tag">SQLite</span>
+        <span class="skill-tag">Clean Architecture</span>
+        <span class="skill-tag">RSS</span>
+        <span class="skill-tag">Web Scraping</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+
+      <!-- Automação & .NET -->
+      <h3 class="category-title">&#x2699;&#xFE0F; Automação &amp; .NET</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/dashaws" target="_blank" rel="noopener">Dashaws</a>
+            </h4>
+            <span class="project-lang lang-ts">TypeScript</span>
+          </div>
+          <p class="project-desc">Dashboard local-first para scheduling e execução de scripts definidos pelo usuário (JavaScript ou Python) com suporte a intervalos, expressões cron, filas e eventos pub/sub. Funciona em modo standalone no browser.</p>
+          <div class="project-tags">
+            <span>dashboard</span><span>scheduling</span><span>cron</span><span>pub/sub</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/hermes" target="_blank" rel="noopener">Hermes</a>
+            </h4>
+            <span class="project-lang lang-cs">C#</span>
+          </div>
+          <p class="project-desc">Aplicação console que busca e armazena notícias a partir de feeds RSS. Um agregador de conteúdo simples e eficiente.</p>
+          <div class="project-tags">
+            <span>rss</span><span>console</span><span>news</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/now" target="_blank" rel="noopener">Now</a>
+            </h4>
+            <span class="project-lang lang-cs">C#</span>
+          </div>
+          <p class="project-desc">POC projetado com Clean Architecture para implementar melhores práticas e conceitos arquiteturais no ecossistema .NET.</p>
+          <div class="project-tags">
+            <span>clean-architecture</span><span>poc</span><span>best-practices</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/testwithazuredockerinstance" target="_blank" rel="noopener">TestWithAzureDockerInstance</a>
+            </h4>
+            <span class="project-lang lang-cs">C#</span>
+          </div>
+          <p class="project-desc">App simples para testar o serviço de instância Docker do Azure. Exploração prática de cloud e containers.</p>
+          <div class="project-tags">
+            <span>azure</span><span>docker</span><span>cloud</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Produtividade -->
+      <h3 class="category-title">&#x23F0; Produtividade</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/habbit" target="_blank" rel="noopener">habbit</a>
+            </h4>
+            <span class="project-lang lang-ts">TypeScript</span>
+          </div>
+          <p class="project-desc">Ferramenta para gerenciamento de projetos e compromissos de médio e longo prazo. Acompanhamento de metas com foco em consistência.</p>
+          <div class="project-tags">
+            <span>productivity</span><span>goals</span><span>planning</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/cronos" target="_blank" rel="noopener">cronos</a>
+            </h4>
+            <span class="project-lang lang-ts">TypeScript</span>
+          </div>
+          <p class="project-desc">Cronômetro com sistema de notificações. Simples, direto e funcional — um timer que avisa quando o tempo acabar.</p>
+          <div class="project-tags">
+            <span>timer</span><span>notifications</span><span>stopwatch</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/reading" target="_blank" rel="noopener">reading</a>
+            </h4>
+            <span class="project-lang lang-html">HTML</span>
+          </div>
+          <p class="project-desc">Controle de progresso de leitura para livros e séries de TV. Acompanhe capítulos, temporadas e páginas lidas.</p>
+          <div class="project-tags">
+            <span>books</span><span>tracking</span><span>progress</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/mytasktoday" target="_blank" rel="noopener">mytasktoday</a>
+            </h4>
+            <span class="project-lang lang-html">HTML</span>
+          </div>
+          <p class="project-desc">Lista de tarefas simples com agrupamento por dia. To-do list minimalista e direta ao ponto.</p>
+          <div class="project-tags">
+            <span>todo</span><span>tasks</span><span>daily</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/locked" target="_blank" rel="noopener">Locked</a>
+            </h4>
+            <span class="project-lang lang-cs">C#</span>
+          </div>
+          <p class="project-desc">App de notas pessoais com sistema de passphrase. Privacidade e segurança para anotações do dia a dia.</p>
+          <div class="project-tags">
+            <span>notes</span><span>security</span><span>passphrase</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Web & Experimentos -->
+      <h3 class="category-title">&#x1F310; Web &amp; Experimentos</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/speech" target="_blank" rel="noopener">speech</a>
+            </h4>
+            <span class="project-lang lang-js">JavaScript</span>
+          </div>
+          <p class="project-desc">App que utiliza ferramentas nativas de text-to-speech dos navegadores para auxiliar nos estudos. Leitura em voz alta direto do browser.</p>
+          <div class="project-tags">
+            <span>tts</span><span>study</span><span>accessibility</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/yachatbws" target="_blank" rel="noopener">YAChatBWS</a>
+            </h4>
+            <span class="project-lang lang-js">JavaScript</span>
+          </div>
+          <p class="project-desc">Yes, another chat, but with SignalR. Chat em tempo real explorando a biblioteca SignalR para comunicação bidirecional.</p>
+          <div class="project-tags">
+            <span>chat</span><span>signalr</span><span>realtime</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/hundred" target="_blank" rel="noopener">hundred</a>
+            </h4>
+            <span class="project-lang lang-html">HTML</span>
+          </div>
+          <p class="project-desc">Chat containerizado simples utilizando WebSockets. Experimento com containers e comunicação em tempo real.</p>
+          <div class="project-tags">
+            <span>websockets</span><span>docker</span><span>chat</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/rawgraphs-app" target="_blank" rel="noopener">rawgraphs-app</a>
+              <span class="project-badge">fork</span>
+            </h4>
+            <span class="project-lang lang-js">JavaScript</span>
+          </div>
+          <p class="project-desc">Interface web para criar visualizações vetoriais customizadas sobre o core do RAWGraphs. Fork do projeto original.</p>
+          <div class="project-tags">
+            <span>visualization</span><span>charts</span><span>vector</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/little-bird" target="_blank" rel="noopener">little-bird</a>
+            </h4>
+            <span class="project-lang lang-php">PHP</span>
+          </div>
+          <p class="project-desc">App Laravel containerizado com banco SQLite para fins de aprendizado. Exploração do ecossistema PHP.</p>
+          <div class="project-tags">
+            <span>laravel</span><span>docker</span><span>sqlite</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Dados & CLI -->
+      <h3 class="category-title">&#x1F4CA; Dados &amp; CLI</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/lima" target="_blank" rel="noopener">lima</a>
+            </h4>
+            <span class="project-lang lang-py">Python</span>
+          </div>
+          <p class="project-desc">Ferramenta CLI para web scraping em sites de notícia. Extração automatizada de conteúdo jornalístico via linha de comando.</p>
+          <div class="project-tags">
+            <span>scraping</span><span>cli</span><span>news</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/analise-dados-densidade-populacao-municipios-brasileiros" target="_blank" rel="noopener">análise-dados</a>
+            </h4>
+            <span class="project-lang lang-jupyter">Jupyter Notebook</span>
+          </div>
+          <p class="project-desc">Análise da distribuição e densidade populacional dos municípios brasileiros. Ciência de dados aplicada a dados demográficos nacionais.</p>
+          <div class="project-tags">
+            <span>data-science</span><span>population</span><span>brazil</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Finanças -->
+      <h3 class="category-title">&#x1F4B0; Finanças</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/myfin" target="_blank" rel="noopener">myfin</a>
+              <span class="project-badge">&#x2B50; 1</span>
+            </h4>
+            <span class="project-lang lang-html">HTML</span>
+          </div>
+          <p class="project-desc">Visualizador frontend simples para arquivos .OFX (Open Financial Exchange). Leitura e visualização de extratos financeiros.</p>
+          <div class="project-tags">
+            <span>ofx</span><span>finance</span><span>viewer</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/rufus" target="_blank" rel="noopener">rufus</a>
+            </h4>
+            <span class="project-lang lang-html">HTML</span>
+          </div>
+          <p class="project-desc">Aplicação para monitoramento de preços de criptomoedas. Acompanhamento simples de valores do mercado cripto.</p>
+          <div class="project-tags">
+            <span>crypto</span><span>prices</span><span>monitor</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/ofxparser.net" target="_blank" rel="noopener">ofxparser.net</a>
+              <span class="project-badge">fork</span>
+            </h4>
+            <span class="project-lang lang-cs">C#</span>
+          </div>
+          <p class="project-desc">Biblioteca em C# para leitura e tradução de arquivos OFX. Fork com contribuições ao parser financeiro original.</p>
+          <div class="project-tags">
+            <span>ofx</span><span>parser</span><span>library</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Outros -->
+      <h3 class="category-title">&#x1F9E9; Outros</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/binarytree" target="_blank" rel="noopener">binarytree</a>
+            </h4>
+            <span class="project-lang lang-kt">Kotlin</span>
+          </div>
+          <p class="project-desc">Implementação simples de árvore binária em Kotlin para reuso em desafios de programação online.</p>
+          <div class="project-tags">
+            <span>data-structures</span><span>algorithms</span><span>competitive</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/twins" target="_blank" rel="noopener">twins</a>
+            </h4>
+            <span class="project-lang lang-css">CSS</span>
+          </div>
+          <p class="project-desc">Calculadora de tempo para ajudar os irmãos gêmeos a dividirem o uso do computador de forma justa.</p>
+          <div class="project-tags">
+            <span>utility</span><span>timer</span><span>family</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/vuejs-without-build-tools-boilerplate" target="_blank" rel="noopener">vuejs-boilerplate</a>
+            </h4>
+            <span class="project-lang lang-html">HTML</span>
+          </div>
+          <p class="project-desc">Script bash para copiar uma estrutura boilerplate Vue.js (sem build tools) para um novo diretório. Template reutilizável.</p>
+          <div class="project-tags">
+            <span>vue</span><span>boilerplate</span><span>template</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h4 class="project-name">
+              <a href="https://github.com/discimus/java-buffered-reader-template" target="_blank" rel="noopener">java-br-template</a>
+            </h4>
+            <span class="project-lang lang-java">Java</span>
+          </div>
+          <p class="project-desc">Template com implementação de BufferedReader que manipula entrada de caracteres individualmente com indicadores EOL e EOF.</p>
+          <div class="project-tags">
+            <span>java</span><span>template</span><span>io</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <a href="https://github.com/discimus" target="_blank" rel="noopener">github.com/discimus</a>
+        &mdash; Jônata Pereira &copy; 2021&ndash;2026
+      </p>
+      <p class="footer-tagline">Open source enthusiast &bull; Falling in love with .NET</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
